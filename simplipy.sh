@@ -17,7 +17,7 @@ cd $1
 
 
 echo "Running unit-tests" #add -v for verbosity
-bin/python -m unittest discover --start-directory lib/python2.7
+bin/python -m unittest discover --start-directory lib/python3.8
 
 echo "Are you happy with the results?"
 read -p "Press [Enter] to continue or ctrl+Z to abort " -n1 -s
@@ -44,7 +44,7 @@ find . -type f -name "*.pyo" -delete
 
 
 echo "Removing duplicated binaries"
-rm bin/python2.7 bin/python2
+rm bin/python3.8 bin/python3.8
 
 
 #remove the include/ directory if you don't plan calling Python
